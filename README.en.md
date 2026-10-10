@@ -1,4 +1,4 @@
-<p align="right"><a href="README.md">简体中文</a> | <strong>English</strong></p>
+<p align="right"><a href="https://github.com/labulaka-ai/paper-writing/blob/main/README.md">简体中文</a> | <strong>English</strong></p>
 
 # paper-writing · Academic Paper Writing Skill
 
