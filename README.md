@@ -1,16 +1,17 @@
 # paper-writing · 学术论文写作 Skill
 
-一个供 AI agent（Claude Code 及兼容的 skill 运行时）使用的**学术论文分节写作与改稿 skill**：写或改 Introduction / Methodology / Results / Discussion / Abstract 任一节时，它先立「主张—证据」脊柱，再按每节的**功能模块**施工、用**语言力学**校准每一句的时态与情态，最后过**投稿前闸门**才允许报「可投」。
+> 作者：**Ruixue Han**（GitHub [@labulaka-ai](https://github.com/labulaka-ai)）· 公众号「**时空AI深水区**」
+> [English version → README.en.md](README.en.md)
 
-它不是提示词合集，而是一套带裁决规则的写作流程：多个方法来源互相冲突时听谁的、主张写多强由证据等级决定而不是由语气决定——这些都写死在流程里。
+我是时空大数据方向的博士在读。这个 skill 是我把自己写论文、改稿、应付审稿的整套流程沉淀下来的产物，给 AI agent（Claude Code 及兼容的 skill 运行时）用：写或改 Introduction / Methodology / Results / Discussion / Abstract 任一节时，先立「主张—证据」脊柱，再按每节的**功能模块**施工、用**语言力学**校准每一句的时态与情态，最后过**投稿前闸门**才允许报「可投」。
 
-> **English summary.** A skill for AI agents to draft and revise academic papers section by section. Backbone: the "functional modules + language mechanics" method (from the *Academic Training* series by the WeChat account 小盐的世界）, reinforced by ARS (CARS model, abstract components, integrity gates), nature-writing (section cards, ML/CV variants), and ARIS (venue templates, cross-model review). Highlights: a claim–evidence spine with per-claim evidence grades (E1–E4), a **hedging budget** that prevents over-defensive writing, a two-stage figure workflow (plot-is-all-you-need for chart selection, figures4papers for publication-grade styling), and a pre-submission gate checklist including citation verification and an anti-over-defense audit.
+它不是提示词合集，而是一套带裁决规则的写作流程：几个结构模型互相打架时听谁的、主张写多强由证据等级决定而不是由语气决定——这些都写死在流程里，是我一篇篇稿子改出来的教训。
 
 ---
 
-## 为什么做这个
+## 为什么我做这个
 
-让通用大模型直接写论文，通病很稳定：
+我让通用大模型帮我写过不少稿子，通病非常稳定：
 
 - **结构拼凑**：每节都像那么回事，但引言的主张在结果里没有证据、各节的研究问题各说一版；
 - **语气校准失真**：要么 overclaim（把 `consistent with` 写成 `demonstrates`），要么**过度防御**——测出来的事实也加 `might`，一个句子叠三层弱化，贡献先自己贬一遍，审稿人还没挑，自己先把主张说没了；
@@ -19,23 +20,17 @@
 
 这个 skill 就是针对这四类病做的：用流程和闸门把它们堵在交付之前。
 
-## 设计思想：一个主干，多路补强，冲突有裁决
+## 我的设计：一个核心方法，多路补强
 
-| 来源 | 在本 skill 中的角色 |
-|---|---|
-| 「小盐的世界」《学术训练》五篇（Introduction / Methodology / Results / Discussion / Abstract） | **主干**：每节的「功能模块＋写作流程」与全部「语言力学」工具（时态语义、情态动词真值度、弱化策略、连接词、冠词、副词位置、被动语态分节规则）。该方法经一线导师认可，是本 skill 的骨架 |
-| ARS（Academic Research Skills） | 结构补强：CARS 引言三步、摘要 5 组件、完整性闸门、venue 披露政策 |
-| nature-writing | 结构补强：分节结构卡、证据阶梯、ML/CV 变体（方法型引言、摘要变体等） |
-| ARIS | 流程补强：会议模板与页数口径、跨模型评审、写作质量五遍自查 |
-| plot-is-all-you-need ＋ figures4papers | 绘图：前者管选型（看图库挑布局与配色），后者管顶刊规范出图。**均为外部依赖，不随本仓库分发**，见 `references/figures.md` |
+核心方法是「**功能模块＋语言力学**」：每一节先回答「这一节是干什么的」（功能模块与写作流程），再解决「每一句怎么说才准确」（时态、情态、连接词、冠词、副词、弱化——语言力学）。这是整套东西的骨架，口径冲突时以它为准。
 
-**裁决规则**：来源冲突时以主干（导师法）为准。例如 ARIS 主张「校准但别弱化」，导师法主张弱化按证据强度分级——执行导师法，冲突点在使用时注明。
+骨架之外，我把自己常用的结构工具编了进来作补强：引言的 CARS 三步模型与标题清单、摘要的 5 组件模型、分节结构卡与 ML/CV 变体（方法型引言、摘要变体等）、会议模板与页数口径、跨模型评审流程。绘图另走两阶段（见下文第 6 节），配套的选型与规范工具需另行安装、不随本仓库分发——这套组合是我在自己的稿子上一轮轮试出来的，留下来的都是真能堵住上面四类病的部分。
 
 ## 工作流总览
 
 **第 0 步 · 先立脊柱，再动笔。** 产出一页 `PAPER_PLAN`：一句话贡献、主张—证据图（每条主张 ↔ 证据 ↔ 图表编号 ↔ **证据等级**）、gap 陈述（必须被文献综述许可，不许凭空制造）、按 venue 选定的结构模型与字数预算。
 
-**第 1 步 · 分节写作，每节过四步。** 写作顺序：Methodology → Results → Discussion → Introduction → Abstract（摘要最后写）。每一节都走：①功能模块（导师法）→ ②结构卡（按 venue 选 ARS/nature 变体）→ ③语言力学检查 → ④本节自检清单。交付分节稿时必须附自检结果，不许只交正文。
+**第 1 步 · 分节写作，每节过四步。** 我的写作顺序：Methodology → Results → Discussion → Introduction → Abstract（摘要最后写）。每一节都走：①功能模块 → ②结构卡（按 venue 选变体）→ ③语言力学检查 → ④本节自检清单。交付分节稿时必须附自检结果，不许只交正文。
 
 **第 2 步 · 绘图配合。** 图在 Results 写作之前定稿大半：先选型、后规范，文字跟着定稿的图走。
 
@@ -45,7 +40,7 @@
 
 ### 1. 证据等级 E1–E4：主张强度由证据决定
 
-每条主张在 `PAPER_PLAN` 阶段就定级，它同时是第 2 节「弱化预算」的计价单位：
+每条主张在 `PAPER_PLAN` 阶段就定级，它同时是下一节「弱化预算」的计价单位：
 
 | 等级 | 含义 |
 |---|---|
@@ -54,9 +49,9 @@
 | E3 | 单一或间接证据的弱推断 |
 | E4 | 猜想 / 外推到证据范围之外 |
 
-### 2. 弱化预算制：防过度防御（本 skill 的原创机制）
+### 2. 弱化预算制：防过度防御
 
-弱化（hedging）是按证据付的账，不是免费保险。匹配是双向的：证据弱而语气强是 overclaim，证据强而语气弱是过度防御，同样是失真。规则写死在 `references/language-mechanics.md` §3：
+这是我给 agent 立的一条硬规矩，起因就是它在我的稿子上反复犯怂。弱化（hedging）是按证据付的账，不是免费保险。匹配是双向的：证据弱而语气强是 overclaim，证据强而语气弱是过度防御，同样是失真。规则写死在 `references/language-mechanics.md` §3：
 
 | 证据等级 | 弱化预算 |
 |---|---|
@@ -77,7 +72,7 @@
 
 ### 3. 语言力学工具箱
 
-全部出自主干方法，按工具归类在 `references/language-mechanics.md`，写任何一节的语言检查阶段逐项过：
+按工具归类在 `references/language-mechanics.md`，写任何一节的语言检查阶段逐项过：
 
 - **时态语义表**：时态是态度与信息归属的标记——引前人结论用现在时还是过去时，等于告诉读者你把它当公认真理还是当时结论；标准操作（现在时）与自家操作（过去时）的切换处逐处检查；
 - **情态动词真值度校准表**：六种功能（能力 / 可能性 / 概率 / 虚拟确定性 / 建议 / 必要性）逐词定权重，含最易混的几组：`may not`（可能不）≠ `cannot`（不可能）、`must` ＝「没有其他解释」、 `did not need to` ≠ `need not have`、`should`（给社区的建议）vs `will`（自家计划）；
@@ -109,14 +104,15 @@
 
 ### 6. 绘图两阶段（`references/figures.md`）
 
-先 **plot-is-all-you-need 选型**：从图库把候选图摆出来挑布局与配色（可自由组合），用自家数据演绎并与样例并排验证；后 **figures4papers 规范出图**：按出版级 house style 与矢量导出约定执行。再加导师法的图文配合四条（明确邀请看图、只详述关键结果、评价性语言定调、正文与图注数字不重复）与锚点图规矩（overview 图锚定方法节、主结果图与摘要共同决定审稿人去留）。
+我画图分两步：先**选型**——把候选图的布局与配色摆出来挑（可自由组合：A 的布局＋C 的配色），用自家数据演绎并与样例并排验证；后**规范出图**——按顶刊的出版级规范与矢量导出约定执行。再加图文配合四条（明确邀请看图、只详述关键结果、评价性语言定调、正文与图注数字不重复）与锚点图规矩（overview 图锚定方法节、主结果图与摘要共同决定审稿人去留）。这两个阶段依赖的工具（plot-is-all-you-need、figures4papers）需另行安装，不随本仓库分发；其中论文图只可参考版式与配色，不可转载。
 
 ## 文件结构
 
 ```
 paper-writing/
 ├── SKILL.md                        # 入口：总流程、调用指引、执行规则
-├── README.md                       # 本文件
+├── README.md                       # 本文件（中文）
+├── README.en.md                    # English version
 ├── LICENSE
 └── references/
     ├── introduction.md             # 引言：漏斗四步＋CARS＋方法型变体＋标题清单
@@ -139,24 +135,22 @@ paper-writing/
 - 「方法部分怎么结构化？这是我的实验记录」
 - 「摘要太长了，帮我压到 250 词以内」
 - 「投稿前帮我过一遍闸门」/「给这稿做一次防御审计」
-- 「这个结果该画什么图？」→ 会转入绘图两阶段（需另行安装两个配套 skill）
+- 「这个结果该画什么图？」→ 会转入绘图两阶段（需另行安装两个配套工具）
 
 适用：CVPR / ICCV / NeurIPS / ICML 等会议稿与期刊稿的写作与改稿。**不适用**：公众号解读、科普长文等内容稿——那是另一种文体，本 skill 的主张—证据纪律会过紧。
 
-## 来源、致谢与边界
+## 我的使用与验证状态
 
-- 本 skill 的方法骨架提炼自公众号「小盐的世界」《学术训练》系列五篇（「功能模块＋语言力学」法），谨此致谢；文中例句为教学短例。本仓库**不包含**该系列的原文复制，细节请回原系列阅读。
-- 结构与流程补强分别来自 ARS、nature-writing、ARIS 三套开源工作，引用处均在各 reference 文件内注明来源。
-- 绘图依赖的 figures4papers 为 CC BY-NC 许可：本仓库只引用其设计规范、**不包含**其任何代码或脚本；plot-is-all-you-need 图库中的论文图只可参考版式与配色，不可转载。
+这套东西在我的论文工作流里实际用着（核心方法 2026-10 定版）。两点如实说明：
+
+- **弱化预算制与防御审计为 2026-10-10 新增机制**，已写入流程与闸门，其全程效果待我第一篇完整稿件跑通后验证，本节届时更新；
 - 本 skill 给出的是写作流程与检查标准，不替代领域判断与实验本身；引用核验、venue 政策等时效信息以投稿时的官方原文为准。
-
-## 验证状态
-
-作者在自家论文工作流中实际使用（方法主干 2026-10 定版）。两点如实说明：
-
-- **弱化预算制与防御审计为 2026-10-10 新增机制**，已写入流程与闸门，其全程效果待第一篇完整稿件跑通后验证，本节届时更新；
-- 各分节手册中的结构补强（ARS / nature / ARIS）为多源综合，与主干冲突时的裁决规则见上文。
 
 ## License
 
-MIT，见 `LICENSE`。方法来源的致谢义务见上一节——如果你分发或改编本 skill，请保留来源说明。
+MIT，见 `LICENSE`。如果你分发或改编本 skill，请保留文件内的作者署名行。
+
+---
+
+**作者**：Ruixue Han（[@labulaka-ai](https://github.com/labulaka-ai)），时空大数据方向博士在读
+**公众号**：「时空AI深水区」——时空数据 × AI 的论文解读与一手实测

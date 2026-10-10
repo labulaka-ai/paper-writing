@@ -1,8 +1,8 @@
 # Abstract
 
-本节骨架为导师法（「小盐的世界」《学术训练》· Abstract 篇）。**摘要最后写**——五篇导师法、ARS、nature 三方在这一点上完全一致。
+本节按「功能模块＋语言力学」法组织。**摘要最后写**——这是没有例外的规矩。
 
-## 功能模块与写作流程（导师法）
+## 功能模块与写作流程（本法）
 
 **定位：从「全文预览」到「独立代表」。** 印刷时代摘要印在文章顶部，只是鼓励读者读全文的预览；数据库时代不同了——摘要数据库让科学家先搜索、浏览摘要再决定读哪些全文。读标题的人比读摘要的人多得多，读摘要的人比读全文的人多得多。因此 **Abstract 必须在数据库中独立竞争、具有独立有效性**（standalone, self-contained description）：即使读者永远看不到全文，也应能从摘要中理解研究的关键点和结果。摘要在某种意义上就是研究文章的代表。
 
@@ -21,7 +21,7 @@
 - **启示表述强度**：摘要中的结果、启示和成就通常被表述得相当强，以鼓励读者阅读全文；但如果确实处于早期阶段或启示尚不确凿，用情态动词（could / might / may）是合理的——只要与论文正文中的表述保持一致。
 - **局限**：在摘要中极少提及。有重要局限可以简要提，但通常不建议写「将在后文讨论」——**摘要应该给出信息，而不是预告信息**。
 
-## 语言力学要点（导师法）
+## 语言力学要点（本法）
 
 **时态按内容分工**（本节最重要的一张表）：
 
@@ -43,9 +43,9 @@
 - **数字配数量词引导解读**：结果数字出现时，搭配 `as many as` / `only` 等数量词来引导读者如何解读这个数字。
 - **压缩技巧**：通过组合句子缩短总长度（如「为了做 X 我们做了 Y」把目标和方法合并为一句）——用尽可能少的词同时传递多层信息，这是摘要写作的核心技巧（与模型 2 同源）。
 
-## 结构补强（ARS / nature，注明来源）
+## 结构补强
 
-**ARS · 摘要 5 组件模型**（`abstract_writing_guide.md`，与导师法模型 1 兼容的施工版）：
+**摘要 5 组件模型**（与模型 1 兼容的施工版）：
 
 1. **Background**（1–2 句）：建立上下文、指出问题。句式：`[Topic] has become increasingly important because...` / `Despite growing interest in [topic], little is known about...` / `Recent developments in [field] have raised questions about...`。避免：以 "This paper..." 开头（太突兀）、泛泛断言（"Education is important"）、过长的历史背景。
 2. **Purpose**（1 句）：具体目标或研究问题。句式：`This study examines [what] in [context].` / `This paper proposes [framework/model] for [application].`
@@ -53,9 +53,9 @@
 4. **Findings**（2–3 句）：**要具体**——有数字时给具体数字（百分比、效应量），只给最重要的发现不给全部。句式：`The results indicate that [finding 1]. Additionally, [finding 2].` / `The analysis revealed [main finding], with [specific metric/detail].` 避免：`Results will be discussed`（摘要本身就是讨论）、含糊发现（"significant results were found"）。
 5. **Implications**（1–2 句）：意义、实际启示或建议。句式：`These findings have implications for [practice/policy/theory].` / `This research contributes to [field] by [contribution].`
 
-**ARS · 结构化/非结构化之分**：结构化摘要带显式标签（Background, Purpose/Objective, Method, Results/Findings, Conclusion/Implications），社科与医学期刊常要求；非结构化是单段流：Context → Problem → Purpose → Method → Key Findings → Implications。**ARS · 长度与关键词制度**（venue 声明的限制优先于此表）：标准稿英文摘要 150–250 词、会议稿 200–500 词，每种语言关键词 5–7 个。**ARS · 关键词选择**：核心概念 2–3 个＋情境（地理/机构/时间）1–2 个＋方法 0–1 个（有特色时）＋领域 1 个；英文关键词小写（专有名词除外）；与标题**互补而非重复**（不要把标题词原样再列一遍）。**ARS · 质量清单要点**：摘要内无引用（导师法的例外情形除外）、无未定义缩写；双语摘要时两版独立撰写而非互译、关键发现与定量数据跨版一致。
+**结构化/非结构化之分**：结构化摘要带显式标签（Background, Purpose/Objective, Method, Results/Findings, Conclusion/Implications），社科与医学期刊常要求；非结构化是单段流：Context → Problem → Purpose → Method → Key Findings → Implications。**长度与关键词制度**（venue 声明的限制优先于此表）：标准稿英文摘要 150–250 词、会议稿 200–500 词，每种语言关键词 5–7 个。**关键词选择**：核心概念 2–3 个＋情境（地理/机构/时间）1–2 个＋方法 0–1 个（有特色时）＋领域 1 个；英文关键词小写（专有名词除外）；与标题**互补而非重复**（不要把标题词原样再列一遍）。**质量清单要点**：摘要内无引用（前述例外情形除外）、无未定义缩写；双语摘要时两版独立撰写而非互译、关键发现与定量数据跨版一致。
 
-**nature-writing · 摘要结构卡**（`static/fragments/section/abstract.md`）：
+**摘要结构卡**：
 
 - 一句定位：摘要是稿件**最短的证据链**，不是引言的压缩版。等 Results 与 Discussion 稳定后再写。
 - 默认 Nature 模式：`precise problem / gap -> answer-enabling design -> main discovery -> decisive support / boundary -> implication`
@@ -65,10 +65,10 @@
 
 ## ML/CV 与 venue 注记
 
-- **ML/CV 摘要变体**（nature-writing，为技术/方法密集型稿件从下列选一）：`challenge -> contribution`；`challenge -> insight -> contribution`；`multiple contributions`。
-- **ARIS · 摘要 5 段流**（`paper-write` §0，与 ARS 5 组件、导师法模型 1 三方互证）：what → why hard → how → evidence → strongest result；结构为 problem → approach → key result → implication；必须自包含（不读正文可懂）；**包含一个具体的定量结果**；150–250 词（核 venue 上限）；无引用、无未定义缩写。
-- **会议摘要的字数现实**：CVPR 等会议摘要通常远短于期刊摘要，导师法「绝不超字数＋先写全再删词」的流程在会议稿里是主工作流——先按 5 组件写满，再按模型 2 合并句子压到上限内，砍的顺序是背景先行、结果与启示最后动。
-- **与标题的联动**：摘要第一句与标题共同决定审稿人的跳读去留（审稿人读法：标题→摘要→图）。标题里出现的定量词或数字，必须能在摘要与正文中核到（nature 标题卡）。
+- **ML/CV 摘要变体**（为技术/方法密集型稿件从下列选一）：`challenge -> contribution`；`challenge -> insight -> contribution`；`multiple contributions`。
+- **摘要 5 段流**（与 5 组件模型、模型 1 互证）：what → why hard → how → evidence → strongest result；结构为 problem → approach → key result → implication；必须自包含（不读正文可懂）；**包含一个具体的定量结果**；150–250 词（核 venue 上限）；无引用、无未定义缩写。
+- **会议摘要的字数现实**：CVPR 等会议摘要通常远短于期刊摘要，「绝不超字数＋先写全再删词」的流程在会议稿里是主工作流——先按 5 组件写满，再按模型 2 合并句子压到上限内，砍的顺序是背景先行、结果与启示最后动。
+- **与标题的联动**：摘要第一句与标题共同决定审稿人的跳读去留（审稿人读法：标题→摘要→图）。标题里出现的定量词或数字，必须能在摘要与正文中核到。
 
 ## 本节自检清单
 
@@ -80,5 +80,7 @@
 - [] 关键词全部出现在摘要内；术语首现给全称；数字都配了 as many as / only 类数量词引导解读
 - [] 字数在 venue 上限内（绝不超限）；压缩靠合并句子而非删关键信息完成
 - [] 启示强度合格：表述足够强以吸引读者，或早期阶段用 could/might/may 且与正文一致；无「将在后文讨论」式预告句
-- [] （ARS）5 组件齐全（背景/目的/方法/发现/启示），发现具体（有数字给数字），无 "Results will be discussed"、无含糊发现
-- [] （nature/ARIS）只有一个中心主张；定量结果只在定义/支撑/界定中心主张时出现；以「使什么成为可能」收尾而非泛泛重要性
+- [] 5 组件齐全（背景/目的/方法/发现/启示），发现具体（有数字给数字），无 "Results will be discussed"、无含糊发现
+- [] 只有一个中心主张；定量结果只在定义/支撑/界定中心主张时出现；以「使什么成为可能」收尾而非泛泛重要性
+
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->

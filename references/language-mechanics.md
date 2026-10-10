@@ -1,6 +1,6 @@
 # 语言力学速查（跨节共用）
 
-全部规则出自导师法五篇（「小盐的世界」《学术训练》），按工具归类；标注了主要适用节。个别补强注明来源（nature/ARIS）。写任何一节的「语言检查」阶段打开本表逐项过。
+全部规则出自「功能模块＋语言力学」法，按工具归类；标注了主要适用节。写任何一节的「语言检查」阶段打开本表逐项过。
 
 ## 1. 时态语义表
 
@@ -19,7 +19,7 @@
 | 成就 | 现在完成时或现在时 | Abstract |
 | 应用 | 一般现在时 | Abstract |
 | 回顾方法论或结果（`was used / is used / has been used` 皆可） | 过去时 / 现在时 / 现在完成时 | Discussion |
-| Results 正文报告观察 | 以过去时为主（补强：nature） | Results |
+| Results 正文报告观察 | 以过去时为主 | Results |
 
 **切换纪律**（Methodology）：在「标准操作（现在时）」与「自己操作（过去时）」之间切换时，每次切换刻意检查时态是否变化；只靠时态不够时，叠加归属标记词（见 §7）。
 
@@ -66,7 +66,7 @@
 - **弱化词库**（问题数据与收敛表述）：slightly, somewhat, only approximate, a minor deficit, negligible, not significant, it should be noted that...
 - **问题数据的标准动作**（Results）：承认问题＋弱化影响＋转向正面——`Although the average uncertainty slightly exceeds the 50% acceptability limit, nevertheless these results suggest that...`
 - **评价性语言不是弱化**（Results）：`significantly lower`、`a striking difference was noted` 是给读者定调的评价，与弱化方向相反，两者不要混用抵消。
-- **升格禁令**（补强：nature）：不要把 `consistent with` 级别的发现升格为 `demonstrates` 的措辞；使用 `must`、`cannot`、`demonstrates` 或因果动词前，必须能点名许可这一强度的研究设计特征。
+- **升格禁令**：不要把 `consistent with` 级别的发现升格为 `demonstrates` 的措辞；使用 `must`、`cannot`、`demonstrates` 或因果动词前，必须能点名许可这一强度的研究设计特征。
 
 **弱化预算（防过度防御，2026-10-10 rui 定）**：弱化是按证据付的账，不是免费保险。匹配是双向的——证据弱而语气强是 overclaim，证据强而语气弱是过度防御，同样是失真。每条主张先在 PAPER_PLAN 里定证据等级，弱化层数不得超预算：
 
@@ -130,7 +130,7 @@
 
 ## 7. 被动语态分节规则 ＋ 替身主语 ＋ We 的用法
 
-被动语态的使用率因节而异（导师法总规则）：
+被动语态的使用率因节而异（本法总规则）：
 
 | 节 | 规则 |
 |---|---|
@@ -148,4 +148,6 @@
 - `We` 只指自己的研究团队：`We have developed...`
 - 泛指「人们普遍认为」不许用 We：不写 `We know that...`，写 `It is known/thought that...`（用 "It" 结构）。
 
-**段落纪律**（导师法，跨节通用）：一段只讲一个核心观点；每段第一句是主题句，后文围绕它展开。写完初稿后只读各段首句——连起来应能组成一个连贯的缩小版文本（此即 gates.md 反向提纲的导师法版本）。
+**段落纪律**（本法，跨节通用）：一段只讲一个核心观点；每段第一句是主题句，后文围绕它展开。写完初稿后只读各段首句——连起来应能组成一个连贯的缩小版文本（此即 gates.md 反向提纲的本法版本）。
+
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
