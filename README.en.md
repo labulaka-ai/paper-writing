@@ -1,7 +1,12 @@
+<p align="right"><a href="README.md">简体中文</a> | <strong>English</strong></p>
+
 # paper-writing · Academic Paper Writing Skill
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-green) ![Docs](https://img.shields.io/badge/docs-中文%20%7C%20English-orange)
+
 > Author: **Ruixue Han** (GitHub [@labulaka-ai](https://github.com/labulaka-ai)) · WeChat Official Account: 「时空AI深水区」 (Spatiotemporal AI Deep Dive)
-> [中文版 → README.md](README.md)
+
+[Why I built this](#why-i-built-this) · [My design](#my-design-one-core-method-several-reinforcements) · [Core mechanisms](#core-mechanisms) · [Repository layout](#repository-layout) · [Installation and use](#installation-and-use)
 
 I'm a PhD candidate working on spatiotemporal big data. This skill is my own paper-writing workflow, distilled from drafting, revising, and surviving peer review, and packaged for AI agents (Claude Code and compatible skill runtimes). When it writes or revises an Introduction, Methodology, Results, Discussion, or Abstract, it first builds a **claim–evidence spine**, then drafts each section by its **functional modules**, calibrates every sentence with **language mechanics**, and only reports "ready to submit" after passing a set of **pre-submission gates**.
 

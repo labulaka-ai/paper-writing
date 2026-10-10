@@ -1,7 +1,12 @@
+<p align="right"><strong>简体中文</strong> | <a href="README.en.md">English</a></p>
+
 # paper-writing · 学术论文写作 Skill
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-green) ![Docs](https://img.shields.io/badge/docs-中文%20%7C%20English-orange)
+
 > 作者：**Ruixue Han**（GitHub [@labulaka-ai](https://github.com/labulaka-ai)）· 公众号「**时空AI深水区**」
-> [English version → README.en.md](README.en.md)
+
+[为什么做这个](#为什么我做这个) · [我的设计](#我的设计一个核心方法多路补强) · [核心机制](#核心机制详解) · [文件结构](#文件结构) · [安装与使用](#安装与使用)
 
 我是时空大数据方向的博士在读。这个 skill 是我把自己写论文、改稿、应付审稿的整套流程沉淀下来的产物，给 AI agent（Claude Code 及兼容的 skill 运行时）用：写或改 Introduction / Methodology / Results / Discussion / Abstract 任一节时，先立「主张—证据」脊柱，再按每节的**功能模块**施工、用**语言力学**校准每一句的时态与情态，最后过**投稿前闸门**才允许报「可投」。
 
