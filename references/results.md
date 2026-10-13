@@ -62,4 +62,4 @@
 - [] 结果出场顺序符合证据阶梯；正文/SI 分工已定，核心证据链未被稳健性文字淹没
 - [] 无模糊比较：比较句都带效应量、样本量或检验；正文与图注无重复数字
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

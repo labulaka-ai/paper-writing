@@ -62,4 +62,4 @@
 - [] 禁用模糊短语全文零残留（standard conditions / routine methods / analyzed statistically / was validated 等）
 - [] 记号只定义一次、全篇一致；overview 图与文字模块一一对应
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

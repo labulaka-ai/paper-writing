@@ -40,4 +40,4 @@
 - **Teaser / 主结果图**：审稿人按标题→摘要→图→引言跳读，第一张图与摘要共同决定去留；篇幅允许时主结果图进引言。此图的评价性图注按上面第 3 条定调。
 - 图序按论证排列（证据阶梯：建立现象→压力测试→排除替代→拓宽→解释→设界，见 results.md 的 补强），不按实验发生的时间顺序排图。
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

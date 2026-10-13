@@ -150,4 +150,4 @@
 
 **段落纪律**（本法，跨节通用）：一段只讲一个核心观点；每段第一句是主题句，后文围绕它展开。写完初稿后只读各段首句——连起来应能组成一个连贯的缩小版文本（此即 gates.md 反向提纲的本法版本）。
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->
