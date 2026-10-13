@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-green) ![Docs](https://img.shields.io/badge/docs-中文%20%7C%20English-orange)
 
-> Author: **Ruixue Han** (GitHub [@labulaka-ai](https://github.com/labulaka-ai)) · WeChat Official Account: 「时空AI深水区」 (Spatiotemporal AI Deep Dive)
+> Author: **Labulaka** (GitHub [@labulaka-ai](https://github.com/labulaka-ai)) · WeChat Official Account: 「时空AI深水区」 (Spatiotemporal AI Deep Dive)
 
 [Why I built this](#why-i-built-this) · [My design](#my-design-one-core-method-several-reinforcements) · [Core mechanisms](#core-mechanisms) · [Repository layout](#repository-layout) · [Installation and use](#installation-and-use)
 
@@ -157,5 +157,5 @@ MIT — see `LICENSE`. If you redistribute or adapt this skill, please keep the 
 
 ---
 
-**Author**: Ruixue Han ([@labulaka-ai](https://github.com/labulaka-ai)), PhD candidate in spatiotemporal big data
+**Author**: Labulaka ([@labulaka-ai](https://github.com/labulaka-ai)), PhD candidate in spatiotemporal big data
 **WeChat Official Account**: 「时空AI深水区」 — paper explainers and first-hand tests at the intersection of spatiotemporal data and AI

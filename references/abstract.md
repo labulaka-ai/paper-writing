@@ -83,4 +83,4 @@
 - [] 5 组件齐全（背景/目的/方法/发现/启示），发现具体（有数字给数字），无 "Results will be discussed"、无含糊发现
 - [] 只有一个中心主张；定量结果只在定义/支撑/界定中心主张时出现；以「使什么成为可能」收尾而非泛泛重要性
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

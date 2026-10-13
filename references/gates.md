@@ -57,4 +57,4 @@
 - [ ] **AI 使用披露**：各 venue 对 AI 使用声明的位置要求不同（Methods / Acknowledgements / 专门声明节等），按目标 venue 的现行政策核对落点与措辞，不许套用其他 venue 的版本。
 - [ ] 收尾清单：所有 `\ref{}` / `\label{}` 对应无未定义引用；图表编号正确；无 TODO/FIXME/XXX 残留；章节文件与主文件 `\input` 一致、无陈旧文件；摘要自包含；标题具体且信息充分；**跳读测试**——只读标题、摘要、引言与 Figure 1 及图注，能复原本文的中心主张。
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

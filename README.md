@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-green) ![Docs](https://img.shields.io/badge/docs-中文%20%7C%20English-orange)
 
-> 作者：**Ruixue Han**（GitHub [@labulaka-ai](https://github.com/labulaka-ai)）· 公众号「**时空AI深水区**」
+> 作者：**Labulaka**（GitHub [@labulaka-ai](https://github.com/labulaka-ai)）· 公众号「**时空AI深水区**」
 
 [为什么做这个](#为什么我做这个) · [我的设计](#我的设计一个核心方法多路补强) · [核心机制](#核心机制详解) · [文件结构](#文件结构) · [安装与使用](#安装与使用)
 
@@ -157,5 +157,5 @@ MIT，见 `LICENSE`。如果你分发或改编本 skill，请保留文件内的�
 
 ---
 
-**作者**：Ruixue Han（[@labulaka-ai](https://github.com/labulaka-ai)），时空大数据方向博士在读
+**作者**：Labulaka（[@labulaka-ai](https://github.com/labulaka-ai)），时空大数据方向博士在读
 **公众号**：「时空AI深水区」——时空数据 × AI 的论文解读与一手实测

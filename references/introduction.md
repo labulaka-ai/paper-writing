@@ -59,4 +59,4 @@
 - [] 标题过清单：核心概念前置、≤15 词（或 venue 惯例）、无空壳开头、主张等级与设计匹配
 - [] 引言长度在预算内（正文 10–15%）
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

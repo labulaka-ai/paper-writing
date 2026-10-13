@@ -63,4 +63,4 @@ references/gates.md 全表逐项过：引用抽验、RQ 逐字一致、主张-�
 5. 每次交付分节稿时，附上该节自检清单的逐项结果，不许只交正文不交自检。
 6. 防过度防御（弱化预算制）：弱化层数不得超过主张证据等级的预算（E1 零弱化、E2 ≤1 层、E3 1–2 层、E4 必须弱化并标明推测）；事实与直接观测句不许弱化；下调主张语气必须点名逼它下调的证据缺口，无名理由不许降。细则见 references/language-mechanics.md §3，投稿前过 gates.md 闸门 3B 并附弱化审计表。
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->

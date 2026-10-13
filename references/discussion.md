@@ -64,4 +64,4 @@
 - [] 结论过 claim 检查通过：主张可回溯、机制词有设计撑腰、推论范围 ≤ 证据范围、first 主张有检索范围支撑
 - [] 整体方向是倒漏斗：从自己的具体结果走向更宽的意义，读者被「送出」论文
 
-<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Ruixue Han (@labulaka-ai) -->
+<!-- 时空AI深水区 · Spatiotemporal AI Deep Dive — Labulaka (@labulaka-ai) -->
